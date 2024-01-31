@@ -30,7 +30,7 @@ footer{
 h1{
 	font-family: Tahoma;
 	font-size: 36pt;
-	/*font-family: 'Sixtyfour', sans-serif;*/
+	font-family: 'Sixtyfour', sans-serif;
 }
 
 
@@ -44,7 +44,7 @@ p{
 	font-family: Tahoma;
 	font-size: 14pt;
 	color: #938074;
-	/*font-family: 'Song Myung', serif;*/
+	font-family: 'Song Myung', serif;
 }
 
 /*.navbar{
