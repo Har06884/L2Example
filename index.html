@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Degu Website</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	
+	
+	
+	<style>
+
+        /*CSS3 style formatting for this page only using internal CSS that would overide the external CSS3 style.css code*/
+        .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px;
+        }
+
+        .top-column {
+        flex-basis: 100%;
+        padding: 10px;
+        }
+
+        .column {
+        flex-basis: calc(30% - 20px);
+        padding: 10px;
+        }
+
+        .column img {
+        width: 100%;
+        height: 100%;
+        }
+
+        .column h2 {
+        color: #938074;
+        font-size: 22pt;
+        font-weight: bold;
+        }
+
+        .column p {
+        color: #938074;
+        font-size: 14pt;
+        }
+
+        .column .button{
+            margin-top: 20px;
+            background-color: #442c20;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-family: Tahoma;
+            font-size: 14px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .column .button:hover {
+            background-color: #61452f;
+        }
+		
+		.slideshow-container {
+            position: relative;
+            max-width: 100%;
+            height: 300px; /* Set a fixed height for the carousel */
+            overflow: hidden; /* Hide any overflow */
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100%; /* Make the images fill the container height */
+            object-fit: cover; /* Maintain aspect ratio and cover the container */
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            padding: 16px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }  
+        
+
+        
+    </style>
+
+</head>
+
+<body>
+	<div>
+		<nav>
+			<div class="social-icons">
+				<ul>
+					<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+					<li><a href="#"><i class="fab fa-x-twitter fa-flip"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+					<li><a href="#"><i class="fab fa-discord"></i></a></li>
+					<li><a href="#"><i class="fa-brands fa-snapchat"></i></a></li>
+				</ul>
+			</div>
+			
+			<div class="nav-links">
+				<ul class="navbar">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Gallery</a></li>
+					<li><a href="#">Videos</a></li>
+					<li><a href="#">Contacts</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	
+	<div>
+		<header>
+			<h1>Welcome to the Degu Website</h1>
+		</header>
+	</div>
+	
+	<div class = "container">
+		<div class="top-column">
+			<h2>About Degus</h2>
+			<p>Degus are small rodents native to Chile. They are known for their social nature and intelligence. With their friendly and curious personalities, degus make great pets for both individuals and families.</p>
+			<h2>Why Choose Degus as Pets?</h2>
+			<p>Degus are highly interactive and can form strong bonds with their owners. They are active and playful, providing endless entertainment. Additionally, degus are low-maintenance pets that are relatively easy to care for.</p>
+			<h2>Learn More About Degus</h2>
+			<p>Explore our website to discover more about degus, including their habitat, diet, behavior, and tips for keeping them happy and healthy. We also have a gallery of adorable degu photos and videos for you to enjoy!</p>
+		</div>
+		<div class="column">
+			<div class="slideshow-container">
+				<img src="img/degu.jpg" alt="Degu Image" class="slide">
+				<img src="img/naturalagouti.jpg" alt="Degu Image" class="slide">
+				<img src="img/naturalagouti2.jpg" alt="Degu Image" class="slide">
+				<img src="img/Champagnewagouti1.jpg" alt="Degu Image" class="slide">
+				<img src="img/sand1.jpg" alt="Degu Image" class="slide">
+				<img src="img/chocolate1.png" alt="Degu Image" class="slide">
+				<img src="img/chocolate2.jpg" alt="Degu Image" class="slide">
+				<img src="img/cream1.png" alt="Degu Image" class="slide">
+				<img src="img/cream2.jpg" alt="Degu Image" class="slide">
+				<img src="img/black1.jpg" alt="Degu Image" class="slide">
+				<img src="img/blue1.jpg" alt="Degu Image" class="slide">
+				<img src="img/tri1.jpg" alt="Degu Image" class="slide">
+				<img src="img/lilac1.jpg" alt="Degu Image" class="slide">
+				<img src="img/patched1.jpg" alt="Degu Image" class="slide">
+				<img src="img/white1.jpg" alt="Degu Image" class="slide">
+
+				<a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+				<a class="next" onclick="changeSlide(1)">&#10095;</a>
+			</div>
+		</div>
+		<div class="column">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/XaWy_pfACrw?si=rtRw3vv4Ty0Sl8_x" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
+		<div class="column">
+			<h2>Colour Variaties</h2>
+			<img src="./img/colourdifference.jpg" alt="Varieties" style="height:auto;">
+			<p>Degu come in different colour varieties ranging from Natural Agouti, Blue, Champagne Agouti, Black, Sand, Cream to White Patched. A massive array of colors are available.</p>
+			<a href="https://www.degutopia.co.uk/degucolours.htm" target="_blank" class="button">Learn More</a>
+		</div>
+	</div>
+	
+	<div>
+		<footer>
+			&copy; 2023 Degu Website. All rights reserved.
+		</footer>		
+	</div>
+	
+	<script src="./js/carousel.js"></script>
+</body>
+</html>

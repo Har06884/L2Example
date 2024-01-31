@@ -1,0 +1,136 @@
+/* CSS Document */
+body {
+	background-color: #f5f2e8;
+	color: #3d3d3d;
+}
+
+header {
+	background-color: #442c20;
+	color: #ffffff;
+	padding: 20px;
+}
+
+ul {
+	position: sticky;
+	top: 0;
+	background-color: #442c20;
+	color: #ffffff;
+	padding: 10px;
+	margin: 0;
+}
+
+footer{
+	background-color: #442c20;
+	color: #ffffff;
+	padding: 10px;
+	font-family: Tahoma;
+	font-size: 14px;
+}
+
+h1{
+	font-family: Tahoma;
+	font-size: 36pt;
+	/*font-family: 'Sixtyfour', sans-serif;*/
+}
+
+
+h2{
+	font-family: Tahoma;
+	font-size: 30pt;
+	color: #938074;
+}
+
+p{
+	font-family: Tahoma;
+	font-size: 14pt;
+	color: #938074;
+	/*font-family: 'Song Myung', serif;*/
+}
+
+/*.navbar{
+	background-color: #4e3527;
+	color: #ffffff;
+	padding: 10px;
+	margin: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navbar li{
+	list-style: none;
+	margin-left: 10px;
+}
+
+.navbar li a{
+	color: #fff;
+	text-decoration: none;
+	font-family: Tahoma;
+	font-size: 20px;
+}
+
+.navbar li a:hover{
+	text-decoration: underline;
+}
+
+.navbar li.active a{
+	font-weight: bold;
+}*/
+
+nav {
+    background-color: #4E3527;
+    color: #ffffff;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Fix the loss of a sticky navbar */
+    top: 0;
+  }
+  
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    
+  }
+  .social-icons ul,
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #4E3527;
+}
+
+.social-icons li,
+.nav-links li {
+  margin-right: 10px;
+}
+
+.social-icons a,
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Tahoma;
+  font-size: 20px;
+}
+  .social-icons a,
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Tahoma;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .social-icons a:hover,
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
